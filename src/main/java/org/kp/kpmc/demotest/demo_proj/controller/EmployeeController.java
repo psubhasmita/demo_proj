@@ -6,8 +6,10 @@ import org.kp.kpmc.demotest.demo_proj.model.Employee;
 import org.kp.kpmc.demotest.demo_proj.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.util.ReflectionUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -65,6 +67,14 @@ public class EmployeeController {
     {
         Optional<Employee> isEmployeeExist = employeeService.getEmployeebyId(id);
         Employee employee=isEmployeeExist.get();
+        empMap.forEach((k,v) -> {
+            Field field= ReflectionUtils.findField(Employee.class, k);
+            field.setAccessible(true);
+            ReflectionUtils.setField(field,employee,v);
+    });
+        employeeService.saveEmployee(employee);
+        List<Employee> employeeList=employeeService.getEmployees();
+        return employeeList ;
     }
 
 }
