@@ -11,7 +11,7 @@ import javax.persistence.Table;
 public class Employee {
 
     @Id
-    private int id;
+    private Integer id;
     @Column(name="name")
     private String name;
     @Column(name="salary")
@@ -21,7 +21,7 @@ public class Employee {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
