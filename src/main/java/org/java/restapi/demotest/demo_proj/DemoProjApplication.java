@@ -1,4 +1,4 @@
-package org.kp.kpmc.demotest.demo_proj;
+package org.java.restapi.demotest.demo_proj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

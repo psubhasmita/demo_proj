@@ -1,11 +1,9 @@
-package org.kp.kpmc.demotest.demo_proj.controller;
+package org.java.restapi.demotest.demo_proj.controller;
 
-import com.sun.javafx.collections.MappingChange;
-import org.kp.kpmc.demotest.demo_proj.exception.UserNotFoundException;
-import org.kp.kpmc.demotest.demo_proj.model.Employee;
-import org.kp.kpmc.demotest.demo_proj.service.EmployeeService;
+import org.java.restapi.demotest.demo_proj.service.EmployeeService;
+import org.java.restapi.demotest.demo_proj.exception.UserNotFoundException;
+import org.java.restapi.demotest.demo_proj.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.util.ReflectionUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -74,7 +72,8 @@ public class EmployeeController {
     });
         employeeService.saveEmployee(employee);
         List<Employee> employeeList=employeeService.getEmployees();
-        return employeeList ;
+        return employeeList;
+
     }
 
 }

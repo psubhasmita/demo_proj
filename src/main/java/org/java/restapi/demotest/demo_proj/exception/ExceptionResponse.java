@@ -1,4 +1,4 @@
-package org.kp.kpmc.demotest.demo_proj.exception;
+package org.java.restapi.demotest.demo_proj.exception;
 
 import java.util.Date;
 

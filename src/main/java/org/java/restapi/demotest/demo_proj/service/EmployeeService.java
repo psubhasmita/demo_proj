@@ -1,7 +1,7 @@
-package org.kp.kpmc.demotest.demo_proj.service;
+package org.java.restapi.demotest.demo_proj.service;
 
-import org.kp.kpmc.demotest.demo_proj.model.Employee;
-import org.kp.kpmc.demotest.demo_proj.repository.EmployeeRepository;
+import org.java.restapi.demotest.demo_proj.repository.EmployeeRepository;
+import org.java.restapi.demotest.demo_proj.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

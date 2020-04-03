@@ -1,17 +1,15 @@
-package org.kp.kpmc.demotest.demo_proj.service;
+package org.java.restapi.demotest.demo_proj.service;
 
+import org.java.restapi.demotest.demo_proj.repository.EmployeeRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.kp.kpmc.demotest.demo_proj.model.Employee;
-import org.kp.kpmc.demotest.demo_proj.repository.EmployeeRepository;
+import org.java.restapi.demotest.demo_proj.model.Employee;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
-
-import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class EmployeeServiceTest {

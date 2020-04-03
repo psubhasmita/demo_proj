@@ -1,9 +1,9 @@
-package org.kp.kpmc.demotest.demo_proj.controller;
+package org.java.restapi.demotest.demo_proj.controller;
 
+import org.java.restapi.demotest.demo_proj.model.Employee;
+import org.java.restapi.demotest.demo_proj.service.EmployeeService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.kp.kpmc.demotest.demo_proj.model.Employee;
-import org.kp.kpmc.demotest.demo_proj.service.EmployeeService;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;

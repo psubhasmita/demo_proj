@@ -1,6 +1,6 @@
-package org.kp.kpmc.demotest.demo_proj.repository;
+package org.java.restapi.demotest.demo_proj.repository;
 
-import org.kp.kpmc.demotest.demo_proj.model.Employee;
+import org.java.restapi.demotest.demo_proj.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

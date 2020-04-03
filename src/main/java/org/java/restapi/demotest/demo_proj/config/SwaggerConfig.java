@@ -1,4 +1,4 @@
-package org.kp.kpmc.demotest.demo_proj.config;
+package org.java.restapi.demotest.demo_proj.config;
 import static  springfox.documentation.builders.PathSelectors.regex;
 
 import org.springframework.context.annotation.Bean;

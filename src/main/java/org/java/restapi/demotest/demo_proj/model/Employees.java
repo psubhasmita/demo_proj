@@ -1,4 +1,4 @@
-package org.kp.kpmc.demotest.demo_proj.model;
+package org.java.restapi.demotest.demo_proj.model;
 
 import java.util.ArrayList;
 import java.util.List;

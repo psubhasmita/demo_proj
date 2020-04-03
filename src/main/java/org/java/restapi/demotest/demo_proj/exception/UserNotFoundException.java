@@ -1,4 +1,4 @@
-package org.kp.kpmc.demotest.demo_proj.exception;
+package org.java.restapi.demotest.demo_proj.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
